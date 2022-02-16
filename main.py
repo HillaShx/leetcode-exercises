@@ -1,12 +1,10 @@
-from add_two_numbers import Solution
-
-input_data = {}
+from delete_duplicates import Solution, input_data
 
 
 def main():
     solution = Solution()
-    for i in range(1, 6):
-        result = solution.addTwoNumbers(input_data[i]["l1"], input_data[i]["l2"])
+    for i in input_data.keys():
+        result = solution.deleteDuplicates(**input_data[i])
         print(result)
 
 
