@@ -1,10 +1,10 @@
-from delete_duplicates import Solution, input_data
+from feezback_mergesort import Solution, input_data
 
 
 def main():
     solution = Solution()
     for i in input_data.keys():
-        result = solution.deleteDuplicates(**input_data[i])
+        result = solution.merge_sort(**input_data[i])
         print(result)
 
 
