@@ -1,11 +1,11 @@
-from feezback_mergesort import Solution, input_data
+from grokking.one.get_max_subarray_avg import Solution, input_data
 
 
 def main():
     solution = Solution()
     for i in input_data.keys():
-        result = solution.merge_sort(**input_data[i])
-        print(result)
+        result = solution.findMaxAverage(**input_data[i])
+        print(f"input {i} result: {result}")
 
 
 if __name__ == "__main__":
